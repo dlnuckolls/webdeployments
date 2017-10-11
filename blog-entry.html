@@ -1,0 +1,173 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turley Foundation</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+    <script src='https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=kuequ25065lp2eaoh62e1glhf2i3osro1w8742fyb1osg7df'></script>
+
+    <script>
+      tinymce.init({
+        selector: '#blog-entry-area',
+        browser_spellcheck: true
+      });
+      tinymce.init({
+        selector: '.myeditablediv',
+        inline: true,
+        browser_spellcheck: true,
+        plugins: "image imagetools",
+        toolbar: 'undo redo | insert | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image'
+      });
+      tinymce.activeEditor.uploadImages(function(success) {
+        $.post('ajax/post.php', tinymce.activeEditor.getContent()).done(function() {
+          console.log("Uploaded images and posted content as an ajax request.");
+          });
+      });
+      </script>
+  </head>
+  <body>
+
+    
+    <div class="hero-section">
+    
+      <nav class="row columns">
+        <div class="title-bar topbar-center-logo-mobile show-for-small-only" data-responsive-toggle="topbar-center-logo" data-hide-for="medium">
+    
+          <div class="menu title-bar-left">
+            <button class="menu menu-icon" type="button" data-toggle="topbar-center-logo"></button>
+          </div>
+    
+           <div class="title-bar-right">
+            <a href="index.html">
+              <img alt="Turley's Place Image" src="assets/img/turleysplace.png" >
+            </a>
+          </div>
+        </div>
+      
+        <div class="top-bar topbar-center-logo" id="topbar-center-logo">
+          <div class="top-bar-left">
+            <ul class="menu vertical medium-horizontal">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop_now.html">Store</a></li>
+              <li><a href="turleys-blog.html">Blog</a></li>
+              <li><a href="calendar.html">Live</a></li>
+            </ul>
+          </div>
+          <div class="top-bar-center show-for-large">
+            <img class="top-bar-turley-image" alt="Turley's Place Image" src="assets/img/turleysplace.png">
+          </div>
+          <div class="top-bar-right">
+            <ul class="menu vertical medium-horizontal">
+              <li><a href="appearances.html">Bio</a></li>
+              <li><a href="in-the-media.html">Media</a></li>
+              <li><a href="writeups.html">Write-Ups</a></li>
+              <li><a href="learning.html">Lessons</a></li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="small-3 large-2">
+          <img alt="West Virginia Music Hall of Fame Logo" src="assets/img/wvhof-icon.png">
+        </div>
+    
+      </nav>
+    
+    </div>
+
+    <div class="community-links">
+      <div class="row">
+    
+        <div class="columns text-center mobile-stack">
+          <a href="http://www.facebook.com/turleyrichards">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <div class="hide-for-small-only">Facebook</div>
+          </a>
+        </div>
+    
+        <div class="columns text-center mobile-stack">
+          <a href="https://www.youtube.com/channel/UCnzb-1a_VIH0a-kkyvGHAQw">
+            <i class="fa fa-youtube" aria-hidden="true"></i>
+            <div class="hide-for-small-only">YouTube</div>
+          </a>
+        </div>
+    
+        <div class="columns text-center mobile-stack">
+          <a href="https://www.myspace.com/turleyrichards">
+            <span class="fa-stack myspace-icons">
+              <i class="fa fa-user fa-stack-2x myspace-icon-small"></i>
+              <i class="fa fa-user fa-stack-2x fa-user myspace-icon-medium"></i>
+              <i class="fa fa-user fa-stack-2x fa-user myspace-icon-large"></i>
+            </span>
+            <i class="fa fa-myspace" aria-hidden="true"></i>
+            <div class="hide-for-small-only">MySpace</div>
+          </a>
+        </div>
+          
+        <div class="columns text-center mobile-stack">
+          <a href="http://www.twitter.com/turleyrichards">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <div class="hide-for-small-only">Twitter</div>
+          </a>
+        </div>
+    
+      </div>
+    </div>
+
+    
+    <div class="row columns main-content">
+      
+      <h1>Blog Editor Example</h1>
+      <form method="post">
+        <textarea id="blog-entry-area"> Hello, World!</textarea>
+      </form>
+    </div>
+    
+    <div class="row columns main-content">
+    
+      <h1>Inline Blog Editor Example</h1>
+      <form method="post">
+        <div class="myeditablediv">
+          <article class="card-flex-article">
+            <div class="card-section">
+              <div class="article-title">
+                <h1>Enter Title Here</h1>
+              </div>
+              
+              <div class="article-summary">
+                <p>Enter Article Details Here.</p>
+                <p>~Turley Richards</p>
+    
+                <div class="align-self-right">
+                  <div class="card-image">
+                    <img class="thumbnail" src="http://via.placeholder.com/350x350">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </form>
+    
+    </div>
+    
+
+    
+    <footer">
+    
+      <div class="row expanded columns turley-footer align-center">
+        <div class="column small-12 text-center glorykidd-link">
+          <p>Built and powered by <a href="http://www.glorykidd.com" target="_blank">GloryKidd Technologies </a> 
+          </p>
+          <p>Copyright © 2017 Turley Richards.</p>
+        </div>
+      </div>
+    
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
