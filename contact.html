@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="assets/css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Julius+Sans+One" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Google Recaptcha -->
+    <script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('html_element', {
+          'sitekey' : '6Lc3CDcUAAAAAGTAQS1ykZN7C1IPMd-GzFXn_-AO'
+        });
+      };
+    </script>
+
   </head>
   <body>
 
@@ -58,6 +68,7 @@
     <div class="grid-container">
     
       <form action="process.php" class="contact-form-container" method="POST" >
+      
         <div class="grid-x-space">
           <div class="contact-form-title">
             <h3>
@@ -89,6 +100,7 @@
               <p><br /><button type="submit" class="success button">Send Email</button></p>
             </div>
           </div>
+      
         </div>
       </form>
     
@@ -185,7 +197,9 @@
       
       </div>
     
+    
     </div>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
     
     <footer>
       <div class="grid-x-center">
