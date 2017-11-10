@@ -3,6 +3,7 @@
   //form submitted
   $from_user = $_POST['ContactName'];
   $from_patient = $_POST['PatientName'];
+  $from_patient = $_POST['PatientAge'];
   $from_phone = $_POST['ContactPhone'];
   $from_email = $_POST['ContactEmail'];
   $from_message = $_POST['ContactMessage'];
