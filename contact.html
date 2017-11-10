@@ -30,7 +30,7 @@
       <nav class="top-bar grid-x-space" id="periago-menu">
         <ul class="periago-menu">
           <li><a href="/index.html">Home</a></li>
-          <li><a href="/resources.html">Resources</a></li>
+          <li><a href="/resources.html">Information</a></li>
           <li><a href="/about.html">About</a></li>
           <li><a href="/contact.html">Contact</a></li>      
         </ul>
@@ -78,26 +78,29 @@
           </div>
       
           <div class="contact-form-cell">
-            <label>Your Name</label>
-            <input name="ContactName" type="text" placeholder="Enter Your Name" />
+            <label for="contact-name">Name / Nombre</label>
+            <input id="contact-name" name="ContactName" type="text" placeholder="Enter Your Name" />
             
-            <label>Patient's Name</label>
-            <input name="PatientName" type="text" placeholder="Patient's name (if different)" />
-            
-            <label>Phone Number</label>
-            <input name="ContactPhone" type="text" placeholder="Contact Number" />
+            <label for="contact-patient-name">Patient's Name / Nombre del Paciente</label>
+            <input id="contact-patient-name" name="PatientName" type="text" placeholder="Patient's name (if different)" />
       
-            <label>Email Address</label>
-            <input name="ContactEmail" type="text" placeholder="Contact Email" />
+            <label for="contact-patient-age">Patient's Age / Edad del Paciente</label>
+            <input id="contact-patient-age" name="PatientName" type="text" placeholder="Patient's name (if different)" />
+            
+            <label for="contact-phone">Phone / Teléfono</label>
+            <input id="contact-phone" name="ContactPhone" type="text" placeholder="Contact Number" />
+      
+            <label for="contact-email">Email</label>
+            <input id="contact-email" name="ContactEmail" type="text" placeholder="Contact Email" />
           </div>
       
           <div class="contact-form-cell">
-            <label>How Can We Help?</label>
-            <textarea name="ContactMessage" rows="6" placeholder="Enter description of patient's needs"></textarea>
+            <label for="contact-reasons">Reason for Appointment / Razón por la Cita </label>
+            <textarea id="contact-reasons" name="ContactMessage" rows="6" placeholder="Enter description of patient's needs"></textarea>
             
             <div class="callout">
               <div class="g-recaptcha" id="html_element"></div>
-              <p><br /><button type="submit" class="success button">Send Email</button></p>
+              <p><br /><button type="submit" class="success button">Submit / Enviar</button></p>
             </div>
           </div>
       
@@ -107,94 +110,91 @@
       <h3 class="location-cards-offices">Our Offices</h3>
     
       <div class="location-cards">
-        <div class="location-card-title">
-          <h3>New Albany Office</h3>
-        </div>
-      
-        <div class="location-card-address">
-          <h4>Address</h4>
-          <p>
-            Periago Orthodontics<br>
-            3007B Charlestown Crossing Way<br>
-            New Albany, IN 47150<br>
-            <a href="tel:+1-812-944-5595"><strong>Tel: </strong>(812) 944-5595</a><br>
-          </p>
-        <!-- </div>
-      
-        <div class="location-card-hours"> -->
-          <h4>Office Hours</h4>
-          <p>Monday — Thursday: 8:30am — 5:00pm<br>
-          Friday— Sunday: Closed</p>
-        </div>
-      
-        <div class="location-card-map-section">
-          <h4>Map &amp; Directions</h4>
-          <div class="responsive-embed">
-            <iframe class="pictureborder" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12515.700330117317!2d-85.797284!3d38.35071600000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1b5879a9f7fb4139!2sPeriago+Orthodontics+LLC!5e0!3m2!1sen!2sus!4v1417486319031" width="485" height="400" frameborder="0"></iframe>
+        <div class="location-card-text">
+          <div class="location-card-title">
+            <h3>Corydon Office</h3>
+          </div>
+          
+          <div class="location-card-address">
+            <h4>Address</h4>
+            <p>
+              Periago Orthodontics<br>
+              1985 Edsel Ln.<br>
+              Corydon, IN 47112<br>
+              <a href="tel:+1-812-738-7273">
+                <strong>Tel: </strong>(812) 738-7273
+              </a>
+              <br>
+              <strong>Fax:</strong> (812) 944-5808
+            </p>
+          </div>
+          <div class="location-card-hours">
+            <h4>Office Hours</h4>
+            <p>Monday — Thursday: 8:30am — 5:00pm<br>
+            Friday— Sunday: Closed</p>
           </div>
         </div>
+      
+        <iframe class="location-card-map-section pictureborder" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3134.1106052344253!2d-86.1347919!3d38.2305407!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8869364ac9a37253%3A0x2fc44a66555de6eb!2s1985+Edsel+Ln+NW%2C+Corydon%2C+IN+47112!5e0!3m2!1sen!2sus!4v1417486564394" frameborder="0" >
+        </iframe>
       
       </div>
     
       <div class="location-cards">
-        <div class="location-card-title">
-          <h3>Corydon Office</h3>
-        </div>
+        <div class="location-card-text">
+          <div class="location-card-title">
+            <h3>Floyds Knob Office</h3>
+          </div>
       
-        <div class="location-card-address">
-          <h4>Address</h4>
-          <p>
-            Periago Orthodontics<br>
-            1985 Edsel Ln.<br>
-            Corydon, IN 47112<br>
-            <a href="tel:+1-812-738-7273"><strong>Tel:</strong> (812) 738-7273</a><br>
-            <strong>Fax:</strong> (812) 944-5808</p>
-        <!-- </div>
-      
-        <div class="location-card-hours"> -->
-          <h4>Office Hours</h4>
-          <p>Monday — Thursday: 8:30am — 5:00pm<br>
-          Friday— Sunday: Closed</p>
-        </div>
-      
-        <div class="location-card-map-section">
-          <h4>Map &amp; Directions</h4>
-          <div class="responsive-embed">
-            <iframe class="pictureborder" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3134.1106052344253!2d-86.1347919!3d38.2305407!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8869364ac9a37253%3A0x2fc44a66555de6eb!2s1985+Edsel+Ln+NW%2C+Corydon%2C+IN+47112!5e0!3m2!1sen!2sus!4v1417486564394" width="485" height="400" frameborder="0">
-            </iframe>
+          <div class="location-card-address">
+            <h4>Address</h4>
+            <p>
+              Periago Orthodontics<br>
+              800 Highlander Point Dr# 201<br>
+              Floyds Knobs, IN 47119<br>
+              <a href="tel:+1-812-923-9877">
+                <strong>Tel: </strong>(812) 923-9877
+              </a>
+              <br>
+            </p>
+          </div>
+          <div class="location-card-hours">
+            <h4>Office Hours</h4>
+            <p>Monday — Thursday: 8:30am — 5:00pm<br>
+            Friday— Sunday: Closed</p>
           </div>
         </div>
+      
+        <iframe class="location-card-map-section pictureborder" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3130.4255998999274!2d-85.90285928475743!3d38.315974079664485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88696a3a64cb5ac9%3A0xd6aca05959020ac9!2s800+Highlander+Point+Dr+%23201%2C+Floyds+Knobs%2C+IN+47119!5e0!3m2!1sen!2sus!4v1488651075832"frameborder="0" allowfullscreen=""></iframe>
       
       </div>
     
       <div class="location-cards">
-        <div class="location-card-title">
-          <h3>Floyds Knob Office</h3>
-        </div>
+        <div class="location-card-text">
+          <div class="location-card-title">
+            <h3>New Albany Office</h3>
+          </div>
       
-        <div class="location-card-address">
-          <h4>Address</h4>
-          <p>
-            Periago Orthodontics<br>
-            800 Highlander Point Dr# 201<br>
-            Floyds Knobs, IN 47119<br>
-            <a href="tel:+1-812-923-9877"><strong>Tel: </strong>(812) 923-9877</a><br>
-          </p>
-        <!-- </div>
-      
-        <div class="location-card-hours"> -->
-          <h4>Office Hours</h4>
-          <p>Monday — Thursday: 8:30am — 5:00pm<br>
-          Friday— Sunday: Closed</p>
-        </div>
-      
-        <div class="location-card-map-section">
-          <h4>Map &amp; Directions</h4>
-          <div class="responsive-embed">
-            <iframe class="pictureborder" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3130.4255998999274!2d-85.90285928475743!3d38.315974079664485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88696a3a64cb5ac9%3A0xd6aca05959020ac9!2s800+Highlander+Point+Dr+%23201%2C+Floyds+Knobs%2C+IN+47119!5e0!3m2!1sen!2sus!4v1488651075832" width="485" height="400" frameborder="0" allowfullscreen=""></iframe>
+          <div class="location-card-address">
+            <h4>Address</h4>
+            <p>
+              Periago Orthodontics<br>
+              3007B Charlestown Crossing Way<br>
+              New Albany, IN 47150<br>
+              <a href="tel:+1-812-944-5595">
+                <strong>Tel: </strong>(812) 944-5595
+              </a>
+              <br>
+            </p>
+          </div>
+          <div class="location-card-hours">
+            <h4>Office Hours</h4>
+            <p>Monday — Thursday: 8:30am — 5:00pm<br>
+            Friday— Sunday: Closed</p>
           </div>
         </div>
       
+        <iframe class="location-card-map-section pictureborder" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12515.700330117317!2d-85.797284!3d38.35071600000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1b5879a9f7fb4139!2sPeriago+Orthodontics+LLC!5e0!3m2!1sen!2sus!4v1417486319031" frameborder="0"></iframe>
       </div>
     
     
